@@ -1,0 +1,46 @@
+.button {
+  cursor: pointer;
+}
+.action {
+  color: green;
+}
+.action:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px green;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.button.fromCenter:hover:after {
+  transform: scaleX(1);
+}
+.fromRight:after {
+  transform-origin: 100% 50%;
+}
+.fromLeft:after {
+  transform-origin: 0% 50%;
+}
+
+.add {
+  color: blue;
+}
+.add:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px blue;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.subtract {
+  color: red;
+}
+
+.subtract:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px red;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}

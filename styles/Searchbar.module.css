@@ -1,0 +1,15 @@
+.searchBarWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.searchBarWrapper input {
+  height: 30px;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  .searchBarWrapper input {
+    height: 30px;
+    width: 100%;
+  }
+}

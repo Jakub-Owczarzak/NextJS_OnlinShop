@@ -1,0 +1,155 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.checkoutGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1200px;
+}
+.summarySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.summary {
+  padding: 10px;
+}
+.checkoutProducts {
+  width: 100%;
+}
+.controlWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.controlWrapper a {
+  display: block;
+  text-decoration: none;
+  color: blue;
+  border-bottom: none;
+  transition: 1s linear;
+}
+.controlWrapper a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px blue;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.controlWrapper a:hover:after {
+  transform: scaleX(1);
+}
+
+.products {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  height: 200px;
+  display: flex;
+  position: relative;
+}
+.checkoutImage {
+  margin-right: 5px;
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  object-fit: cover;
+}
+.infoChekoutWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  object-fit: cover;
+}
+.image:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+  min-height: 600px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    min-height: 400px;
+  }
+  .checkoutGrid {
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .checkoutImage {
+    width: 100%;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .infoChekoutWrapper {
+    padding-top: 10px;
+    width: 100%;
+    height: 300px;
+  }
+}
