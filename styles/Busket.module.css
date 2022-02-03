@@ -6,6 +6,7 @@
   right: 20px;
   bottom: 20px;
   cursor: pointer;
+  z-index: 1000;
 }
 .busketWrapper img {
   width: 100%;
@@ -25,4 +26,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  .busketWrapper {
+    right: 0px;
+    bottom: 0px;
+  }
 }

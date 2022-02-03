@@ -1,10 +1,8 @@
 import React, { createContext, useReducer } from 'react';
 
-
 const initialState = {
     itemsInCart: []
 }
-
 
 const SET_CART = "SET_CART";
 const ADD_PRODUCT = "ADD_PRODUCT";
@@ -68,7 +66,6 @@ const reducer = (state = initialState, action) => {
 }
 
 export const CartContext = createContext();
-
 
 export const CartProvider = ({ children }) => {
 
